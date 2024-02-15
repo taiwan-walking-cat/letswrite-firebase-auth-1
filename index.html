@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>用 Firebase Authentication 做一套簡易會員系統 - 電子郵件 密碼 - August - Let's Write</title>
+    <title>用成績統計系統 - 登入</title>
     <link rel="canonical" href="https://www.letswrite.tw/firebase-auth/"/>
     <meta property="og:url" content="https://letswritetw.github.io/letswrite-firebase-auth/"/>
     <meta property="fb:app_id" content="911000986339138"/>
@@ -44,7 +44,7 @@
       <section class="user-null none">
         <!-- 登入 || 註冊 表單-->
         <div class="form-card">
-          <div class="cat mb-4"><img src="dist/cat_input.svg"/><a href="https://letswrite.tw/firebase-auth-email/" target="_blank">Let's Write 筆記文 »</a></div>
+          <div class="cat mb-4"><img src="dist/cat_input.svg"/>
           <div class="tab-title mb-4"><a class="active" href="#" data-value="signin">登入</a><a href="#" data-value="create">註冊</a></div>
           <div class="input-group mb-4">
             <input class="u-full-width" id="email" type="email" placeholder="輸入帳號"/>
@@ -74,6 +74,7 @@
           <p id="user-uid"></p>
           <p id="user-name"></p>
           <p id="user-email-verify"></p>
+          <a href="https://i-like-dev.github.io/grade" target="_blank">前往計算成績</a>
         </div>
         <div class="input-group mb-4">
           <button class="button button-primary" id="editor" type="button">更新顯示名稱</button>
@@ -137,14 +138,13 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
     <script>
       var firebaseConfig = {
-        apiKey: "AIzaSyCFpMDt4vtV96zycNpJTxo73XvA4q9MIZQ",
-        authDomain: "letswrite-helpful-btn.firebaseapp.com",
-        databaseURL: "https://letswrite-helpful-btn.firebaseio.com",
-        projectId: "letswrite-helpful-btn",
-        storageBucket: "letswrite-helpful-btn.appspot.com",
-        messagingSenderId: "498690047881",
-        appId: "1:498690047881:web:dcb559143db6f145e26b58",
-        measurementId: "G-9YZ3G343K3"
+        apiKey: "AIzaSyAAdTe1wlnRRvsVk_CulKSASvVRgMjy4Qk",
+        authDomain: "my-event-18887.firebaseapp.com",
+        projectId: "my-event-18887",
+        storageBucket: "my-event-18887.appspot.com",
+        messagingSenderId: "502808990513",
+        appId: "1:502808990513:web:2bd444e3337bf6684d1610",
+        measurementId: "G-9HE2FR41VC"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
